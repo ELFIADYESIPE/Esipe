@@ -1,4 +1,4 @@
-/**
+﻿/**
  * 
  */
 package edu.elfiady.ingé2.outils.representation;
@@ -13,7 +13,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  */
 @XmlRootElement
 public class Reservation implements Serializable {
-
+	//une modif
 	/**
 	 *
 	 */
