@@ -42,8 +42,6 @@ public class ReservationResource {
 		final Reservation reservation = new Reservation();
 		reservation.setId_Reservation(reservationId);
 		reservation.setNom(clientName);
-		reservation.setDescription(desc);
-		gestionReservation.createReservation(reservation);
 
 		return Response.ok(reservation).build();
 	}
