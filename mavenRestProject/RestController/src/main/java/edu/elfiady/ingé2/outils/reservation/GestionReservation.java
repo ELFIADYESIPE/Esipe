@@ -38,13 +38,15 @@ public class GestionReservation {
 	 * @return
 	 */
 	public boolean createReservation(Reservation reservation) {
-
-		if (getReservation(reservation.getId_Reservation()) == null && keycloakClient.isAuthorizedReservation(reservation)) {
-			reservation_List.put(reservation.getId_Reservation(), reservation);
-			LOGGER.info("Create reservation was successfully invoked ");
-			return true;
+		if(!(reservation == null)) {
+			if (getReservation(reservation.getId_Reservation()) == null && keycloakClient.isAuthorizedReservation(reservation)) {
+				reservation_List.put(reservation.getId_Reservation(), reservation);
+				LOGGER.info("Create reservation was successfully invoked ");
+				return true;
+			}
+			LOGGER.info("Create reservation was fail because an existing resrvation object");
+			return false;
 		}
-		LOGGER.info("Create reservation was fail because an existing resrvation object");
 		return false;
 	}
 
