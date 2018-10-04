@@ -5,9 +5,7 @@ package edu.elfiady.ingé2.outils.reservation;
 
 import java.util.HashMap;
 import java.util.Map;
-
 import org.apache.log4j.Logger;
-
 import edu.elfiady.ingé2.outils.authorization.keycloak.KeycloakClient;
 import edu.elfiady.ingé2.outils.representation.Reservation;
 
@@ -34,7 +32,7 @@ public class GestionReservation {
 	public Reservation getReservation(long id) {
 		return reservation_List.get(id);
 	}
-
+	
 	/**
 	 * @param reservation
 	 * @return
