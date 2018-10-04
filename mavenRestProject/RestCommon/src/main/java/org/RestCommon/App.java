@@ -1,7 +1,7 @@
 package org.RestCommon;
 
 /**
- * Hello world!
+ * Salut monde!
  *
  */
 public class App 
