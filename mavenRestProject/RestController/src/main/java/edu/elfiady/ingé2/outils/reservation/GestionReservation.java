@@ -41,6 +41,7 @@ public class GestionReservation {
 	 */
 	public boolean createReservation(Reservation reservation) {
 
+              if (reservation != null) {
 		if (getReservation(reservation.getId_Reservation()) == null && keycloakClient.isAuthorizedReservation(reservation)) {
 			reservation_List.put(reservation.getId_Reservation(), reservation);
 			LOGGER.info("Create reservation was successfully invoked ");
@@ -48,6 +49,11 @@ public class GestionReservation {
 		}
 		LOGGER.info("Create reservation was fail because an existing resrvation object");
 		return false;
+             }
+             else {
+               throw new IllegalArgumentException("bad argument"); 
+              }
+            
 	}
 
 
