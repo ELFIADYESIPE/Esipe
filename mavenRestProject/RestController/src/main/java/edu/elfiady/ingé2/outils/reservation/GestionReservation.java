@@ -40,7 +40,8 @@ public class GestionReservation {
 	 * @return
 	 */
 	public boolean createReservation(Reservation reservation) {
-
+	if(reservation == null) {
+	}
 		if (getReservation(reservation.getId_Reservation()) == null && keycloakClient.isAuthorizedReservation(reservation)) {
 			reservation_List.put(reservation.getId_Reservation(), reservation);
 			LOGGER.info("Create reservation was successfully invoked ");
