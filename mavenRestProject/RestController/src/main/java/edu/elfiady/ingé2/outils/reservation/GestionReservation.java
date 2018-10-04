@@ -41,6 +41,7 @@ public class GestionReservation {
 	 */
 	public boolean createReservation(Reservation reservation) {
 	if(reservation == null) {
+		//nothing
 	}
 		if (getReservation(reservation.getId_Reservation()) == null && keycloakClient.isAuthorizedReservation(reservation)) {
 			reservation_List.put(reservation.getId_Reservation(), reservation);
