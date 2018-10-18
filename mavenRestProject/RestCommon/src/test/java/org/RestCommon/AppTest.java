@@ -1,5 +1,6 @@
 package org.RestCommon;
 
+import edu.elfiady.ingé2.outils.representation.Planning;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -31,8 +32,18 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
+    public void testModifierPlanning_MethodMustBeInvokedSuccefully()
     {
-        assertTrue( true );
+    	Planning planning = new Planning(2);
+    	planning.modifierPlanning();
+    	int id = planning.getId();
+    	boolean test = false;
+    	if(id == 3) {
+    		test = true;
+    	}
+    	else {
+    		test = false;
+    	}
+        assertTrue("La méthode doit correctement marche",  test );
     }
 }

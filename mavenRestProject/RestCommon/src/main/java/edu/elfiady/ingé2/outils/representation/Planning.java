@@ -4,16 +4,20 @@ public class Planning {
 	
 	int id;
 	
-	Planning(int id) {
+	public Planning(int id) {
 		this.id=id;
 	}
 	
-	public void modifierPlanning(int id) {
-		setId(id+1);
+	public void modifierPlanning() {
+		setId(this.id+1);
 	}
 	
 	public void setId(int id) {
 		this.id=id;
+	}
+	
+	public int getId() {
+		return this.id;
 	}
 
 }
