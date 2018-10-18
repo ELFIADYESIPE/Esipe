@@ -34,7 +34,7 @@ public class Reservation implements Serializable {
 	 *            the id_salle to set
 	 */
 	public void setId_Reservation(long id_reservation) {
-		this.id = id_reservation;
+			this.id = id_reservation;
 	}
 
 	/**
