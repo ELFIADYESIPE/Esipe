@@ -1,4 +1,4 @@
-﻿/**
+/**
  * 
  */
 package edu.elfiady.ingé2.outils.representation;

@@ -41,7 +41,7 @@ public class GestionReservation {
 	 */
 	public boolean createReservation(Reservation reservation) {
 		
-		if reservation == null {
+		if (reservation == null) {
 			return false;
 		}
 		
