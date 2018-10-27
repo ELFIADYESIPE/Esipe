@@ -1,5 +1,6 @@
 package org.RestCommon;
 
+import esipeMavenProjet.mavenRestProject.Planning;
 import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
@@ -7,8 +8,7 @@ import junit.framework.TestSuite;
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
+public class AppTest extends TestCase
 {
     /**
      * Create the test case
@@ -34,5 +34,21 @@ public class AppTest
     public void testApp()
     {
         assertTrue( true );
+    }
+    
+    public void testUpdatePlanning() {
+    	Planning p = new Planning(3);
+    	p.planningUpdate();
+    	int id = p.getId();
+    	boolean test = false;
+    	
+    	if(id == 4) {
+    		test = true;
+    	} else {
+    		teste = false;
+    	}
+    	
+    	assertTrue("La méthode doit correctement marche",  test );
+    	
     }
 }
