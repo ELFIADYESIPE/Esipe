@@ -5,7 +5,7 @@ public class Planning {
 	int id;
 	
 	public Planning(int id) {
-		this.id=id;
+		this.id=5;
 	}
 	
 	public void modifierPlanning() {
