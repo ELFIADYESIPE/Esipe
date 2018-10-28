@@ -9,7 +9,7 @@ public class Planning {
 	}
 	
 	public void modifierPlanning() {
-		setId(this.id+1+CECI EST UNE deuxième ERREUR DE COMPILATION);
+		setId(this.id+1+CECI EST UNE ERREUR DE COMPILATION);
 	}
 	
 	public void setId(int id) {
